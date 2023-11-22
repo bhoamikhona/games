@@ -7,6 +7,8 @@ If the user messes up the sequence, then the game ends.
 
 ## Demo
 
+![simon](https://github.com/bhoamikhona/games/assets/50435319/ba5e36c4-b546-492d-adb9-803c16fbc54c)
+
 ## Author
 
 - [@bhoamikhona](https://github.com/bhoamikhona)
