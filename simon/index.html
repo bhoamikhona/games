@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon</title>
+    <link rel="shortcut icon" href="./images/simon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <main class="main">
+      <h1 class="title">Simon</h1>
+      <div class="scores">
+        <p class="score">Score: <span class="current-score">6</span></p>
+        <p class="score">High Score: <span class="high-score">24</span></p>
+      </div>
+
+      <div class="btn-container">
+        <button id="red" class="btn btn-red"></button>
+        <button id="blue" class="btn btn-blue"></button>
+        <button id="green" class="btn btn-green"></button>
+        <button id="yellow" class="btn btn-yellow"></button>
+      </div>
+
+      <div class="control-container">
+        <!-- <button class="btn-control">REPLAY</button> -->
+        <button class="btn-control play">New Game</button>
+        <button class="btn-control show-modal">Rules</button>
+      </div>
+
+      <!-- Rules Modal -->
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h2 class="title">Rules</h2>
+        <p>
+          Get ready to watch, remember, repeat! Simon is an exciting game in
+          which players must repeat random sequences of signals by pressing the
+          color buttons in correct order. Experience the fun as you repeat the
+          patterns and advance to higher levels. Keep track of your score as you
+          challenge friends or try to beat your own high score.
+        </p>
+        <ul>
+          <li>
+            Press the NEW GAME button. Simon will give the first signal. Repeat
+            the signal by pressing the same color button.
+          </li>
+          <li>
+            Simon will then give the next signal. Repeat the two signals by
+            pressing the same color buttons, in order.
+          </li>
+          <li>
+            Simon will give the next signal and you now have to repeat all the
+            three signals by pressing the same color buttons, in order.
+          </li>
+          <li>
+            Continue playing as long as you can repeat sequence, in order.
+          </li>
+          <li>If you fail to repeat a sequence exactly, you lose.</li>
+        </ul>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+  </body>
+</html>
