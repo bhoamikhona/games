@@ -5,6 +5,8 @@
 **e.g.** The game shows the first colour in the sequence (blue). The user clicks on the blue button. Next, the game shows the next colour (red), the user has to remember the sequence is blue, red and so on and so forth.
 If the user messes up the sequence, then the game ends.
 
+[Live Site](https://bhoamikhona.github.io/games/simon/index.html)
+
 ## Demo
 
 ![simon](https://github.com/bhoamikhona/games/assets/50435319/ba5e36c4-b546-492d-adb9-803c16fbc54c)
