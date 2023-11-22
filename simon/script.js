@@ -78,7 +78,7 @@ const animatePress = function (color) {
 };
 
 // game over function
-const gameOver = function (score, highScore) {
+const gameOver = function () {
   // play wrong move sound
   playSound("wrong");
 
@@ -87,13 +87,6 @@ const gameOver = function (score, highScore) {
     btn.classList.add("btn__disabled");
     bodyEl.classList.add("body__game-over");
   });
-
-  // update scores
-  if (score > highScore) {
-    highScore = score;
-    highScoreEl.innerText = highScore;
-    localStorage.setItem("highScore", JSON.stringify(highScore));
-  }
 };
 
 // next sequence
@@ -135,7 +128,13 @@ const checkPattern = function (currentRound) {
     }
   } else {
     // if entered sequence is wrong, call the gameOver() function
-    gameOver(score, highScore);
+    gameOver();
+    // update scores
+    if (score > highScore) {
+      highScore = score;
+      highScoreEl.innerText = highScore;
+      localStorage.setItem("highScore", JSON.stringify(highScore));
+    }
   }
 };
 
